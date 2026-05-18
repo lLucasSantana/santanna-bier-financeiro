@@ -49,21 +49,27 @@ santanna-bier-financeiro/
 
 Este projeto foi desenvolvido com fins acadêmicos como parte do Projeto Integrador da graduação em Análise e Desenvolvimento de Sistemas da URI Erechim.
 
-👨‍💻 Desenvolvedor
+## 👨‍💻 Desenvolvedor
 
-Lucas Mateus Santana da Silva
+**Lucas Mateus Santana da Silva**
 
-Estudante de Análise e Desenvolvimento de Sistemas
-Estudante de Administração
-Apaixonado por tecnologia, gestão e desenvolvimento de sistemas
+- Estudante de Análise e Desenvolvimento de Sistemas
+- Estudante de Administração
+- Apaixonado por tecnologia, gestão e desenvolvimento de sistemas
 
-📷 Futuras Implementações
-📊 Dashboard financeira
-📈 Relatórios gráficos
-🔐 Sistema de login
-💾 Integração com banco de dados
-☁️ Hospedagem online
-📱 Responsividade mobile
+## 📷 Futuras Implementações
+
+- 📊 Dashboard financeira
+- 📈 Relatórios gráficos
+- 🔐 Sistema de login
+- 💾 Integração com banco de dados
+- ☁️ Hospedagem online
+- 📱 Responsividade mobile
+
+  ## 📌 Status do Projeto
+
+🚧 Em desenvolvimento
+
 
 📄 Licença
 
