@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santanna Bier | Sistema Financeiro</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="loading" class="loading"><div class="loader-card"><img src="logo-santanna-bier.png" alt="Santanna Bier"><span>Carregando sistema financeiro...</span></div></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-box"><img src="logo-santanna-bier.png" alt="Logo Santanna Bier"><div><strong>Santanna Bier</strong><small>Financeiro Premium</small></div></div>
+      <nav class="menu"><a href="index.html" class="active">Dashboard</a><a href="cadastro.html">Novo lançamento</a><a href="lancamentos.html">Movimentações</a><a href="resultados.html">Resultados</a></nav>
+      <div class="sidebar-card"><span>PI Faculdade</span><strong>Gestão financeira</strong><small>Controle de entradas, saídas e saldo para comércio de bebidas.</small></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div><p class="eyebrow">Painel de controle</p><h1>Dashboard financeiro</h1><span>Visão geral da Santanna Bier em tempo real.</span></div>
+        <a class="btn-primary" href="cadastro.html">+ Novo lançamento</a>
+      </header>
+
+      <section class="hero-card">
+        <div><p class="eyebrow">Resumo executivo</p><h2 id="fraseStatus">Analisando resultados...</h2><span>Dados salvos no navegador com LocalStorage para apresentação acadêmica.</span></div>
+        <div class="hero-logo"><img src="logo-santanna-bier.png" alt="Santanna Bier"></div>
+      </section>
+
+      <section class="filters glass-panel">
+        <div><label>Período</label><select id="selecionarPeriodo" onchange="atualizarPeriodo(this.value)"><option value="7">Últimos 7 dias</option><option value="30">Últimos 30 dias</option><option value="90">Últimos 90 dias</option><option value="0">Todos os registros</option></select></div>
+        <div><label>Data inicial</label><input type="date" id="dataInicio" onchange="atualizarPeriodoCustomizado()"></div>
+        <div><label>Data final</label><input type="date" id="dataFim" onchange="atualizarPeriodoCustomizado()"></div>
+      </section>
+
+      <section class="cards-grid">
+        <article class="stat-card entrada"><span>Entradas</span><strong id="totalEntradas">R$ 0,00</strong><small id="qtdEntradas">0 transações</small></article>
+        <article class="stat-card saida"><span>Saídas</span><strong id="totalSaidas">R$ 0,00</strong><small id="qtdSaidas">0 transações</small></article>
+        <article class="stat-card saldo"><span>Saldo atual</span><strong id="saldoAtual">R$ 0,00</strong><small id="margemSaldo">0% do total</small></article>
+      </section>
+
+      <section class="chart-grid">
+        <article class="panel"><div class="panel-title"><h3>Entrada vs saída</h3><span>Distribuição financeira</span></div><canvas id="chartPizza"></canvas></article>
+        <article class="panel"><div class="panel-title"><h3>Movimentações por dia</h3><span>Comparativo diário</span></div><canvas id="chartBarras"></canvas></article>
+      </section>
+
+      <section class="panel"><div class="panel-title"><h3>Análise detalhada</h3><span>Indicadores importantes para decisão</span></div><div class="metrics-grid"><div class="metric"><span>Ticket médio</span><strong id="ticketMedio">R$ 0,00</strong></div><div class="metric"><span>Maior entrada</span><strong id="maiorEntrada">R$ 0,00</strong></div><div class="metric"><span>Maior saída</span><strong id="maiorSaida">R$ 0,00</strong></div><div class="metric"><span>Taxa de retorno</span><strong id="taxaRetorno">0%</strong></div></div></section>
+
+      <section class="panel"><div class="panel-title"><h3>Lançamentos recentes</h3><span>Últimas movimentações registradas</span></div><div class="table-wrap"><table><thead><tr><th>Data</th><th>Descrição</th><th>Tipo</th><th>Valor</th></tr></thead><tbody id="listaRecentes"></tbody></table></div></section>
+    </main>
+  </div>
+  <script src="script.js"></script><script>carregarDashboard();</script>
+</body>
+</html>
