@@ -19,6 +19,15 @@ O sistema permite realizar:
 
 ---
 
+## 📷 Screenshots
+
+### Tela Inicial
+<img src="assets/tela-inicial.png" width="800">
+
+### Tela de Lançamentos
+<img src="assets/lancamentos.png" width="800">
+
+
 ## 🚀 Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando:
