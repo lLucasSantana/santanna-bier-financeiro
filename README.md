@@ -68,9 +68,9 @@ Este projeto foi desenvolvido com fins acadêmicos como parte do Projeto Integra
 
   ## 📌 Status do Projeto
 
-🚧 Em desenvolvimento
+   🚧 Em desenvolvimento
 
 
-📄 Licença
+     📄 Licença
 
-Este projeto está sob a licença MIT.
+   Este projeto está sob a licença MIT.
