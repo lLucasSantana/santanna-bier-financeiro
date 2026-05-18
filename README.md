@@ -27,7 +27,7 @@ O sistema permite realizar:
 ---
 
 ### 💰 Tela de Lançamentos
-<img src="assets/lancamentos.png" width="800">
+<img src="assets/laçamentos.png" width="800">
 
 ---
 
