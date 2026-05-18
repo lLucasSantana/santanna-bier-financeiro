@@ -21,12 +21,18 @@ O sistema permite realizar:
 
 ## 📷 Screenshots
 
-### Tela Inicial
-<img src="assets/tela-inicial.png" width="800">
+### 🏠 Tela Inicial
+<img src="assets/tela inicial.png" width="800">
 
-### Tela de Lançamentos
+---
+
+### 💰 Tela de Lançamentos
 <img src="assets/lancamentos.png" width="800">
 
+---
+
+### 📊 Tela de Resultados
+<img src="assets/resultados.png" width="800">
 
 ## 🚀 Tecnologias Utilizadas
 
