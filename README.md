@@ -85,6 +85,8 @@ Este projeto foi desenvolvido com fins acadêmicos como parte do Projeto Integra
 
    🚧 Em desenvolvimento
   ```
-  ###📄 Licença
+  📄 Licença
 
    Este projeto está sob a licença MIT.
+  ```
+  
